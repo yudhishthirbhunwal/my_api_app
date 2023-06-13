@@ -14,6 +14,8 @@ gem "puma", "~> 5.0"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
+# Use Fast JSON API for JSON serialization
+gem "fast_jsonapi", "~> 1.5"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -30,6 +32,10 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# Use Shrine as uploads toolkit
+gem "shrine", "~> 3.4"
+gem "shrine-tus", "~> 2.1" # for resumable uploads
+gem "tus-server", "~> 2.3" # for tus.io protocol
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
